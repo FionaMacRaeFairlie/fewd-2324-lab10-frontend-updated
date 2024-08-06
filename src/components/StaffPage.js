@@ -59,6 +59,7 @@ export default function StaffPage() {
       headers: {
         Accept: "application/json, text/plain, */*     ",
         "Content-Type": "application/json",
+        Authorization: token
       },
       body:orderString,
     })
