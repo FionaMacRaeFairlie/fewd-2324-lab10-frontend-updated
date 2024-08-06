@@ -18,7 +18,11 @@ const FoodOrder = ({ items }) => {
             <h2 className=" justify-content-left headingStyleLeft">Menu</h2>
             <ul className="list-group">
               {items.map((item) => (
-                <li className="menu-list list-group-item" key={item.id} onClick={(e) => handleClick(e, item.name)}>
+                <li
+                  className="menu-list list-group-item"
+                  key={item.id}
+                  onClick={(e) => handleClick(e, item.name)}
+                >
                   {item.name}
                 </li>
               ))}
